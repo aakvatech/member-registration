@@ -7,12 +7,12 @@ def get_data():
     return [
         {
             "module_name": "Member Registration",
-            "category": "module",
+            "category": "Modules",
             "label": _("Member Registration"),
             "color": "grey",
-            "reverse": 1,
             "icon": "octicon octicon-file-directory",
             "type": "module",
+            "label": _("Member Registration"),
             "description": "Todos, notes, calendar and newsletter."
         },
     ]

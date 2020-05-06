@@ -1,0 +1,190 @@
+{
+ "autoname": "Format:{member_name}",
+ "creation": "2020-05-05 13:53:00.722458",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "member_name",
+  "contact_person",
+  "contact_person_mob_no",
+  "contact_whataspp_no",
+  "covid_infected",
+  "infected_date",
+  "recovered",
+  "recovered_date",
+  "death",
+  "death_date",
+  "column_break_8",
+  "asthma",
+  "diabetes",
+  "heart_problem",
+  "any_allergy",
+  "specify_allergy",
+  "other_medical_issues",
+  "specify_other_medical_issues",
+  "section_break_4",
+  "member_log_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "member_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Member Name",
+   "options": "Family Detail",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "member_log_details",
+   "fieldtype": "Table",
+   "label": "Member Log Details",
+   "options": "Member Log Details"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.covid_infected ==1",
+   "fieldname": "recovered",
+   "fieldtype": "Check",
+   "label": "Recovered"
+  },
+  {
+   "default": "Now",
+   "depends_on": "eval: doc.covid_infected ==1",
+   "fieldname": "infected_date",
+   "fieldtype": "Datetime",
+   "label": "Infected Date"
+  },
+  {
+   "default": "Now",
+   "depends_on": "eval: doc.recovered ==1",
+   "fieldname": "recovered_date",
+   "fieldtype": "Datetime",
+   "label": "Recovered Date"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.covid_infected ==1",
+   "fieldname": "death",
+   "fieldtype": "Check",
+   "label": "Death"
+  },
+  {
+   "default": "Now",
+   "depends_on": "eval: doc.death ==1",
+   "fieldname": "death_date",
+   "fieldtype": "Datetime",
+   "label": "Death Date"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "asthma",
+   "fieldtype": "Check",
+   "label": "Asthma"
+  },
+  {
+   "default": "0",
+   "fieldname": "diabetes",
+   "fieldtype": "Check",
+   "label": "Diabetes"
+  },
+  {
+   "default": "0",
+   "fieldname": "heart_problem",
+   "fieldtype": "Check",
+   "label": "Heart Problem"
+  },
+  {
+   "default": "0",
+   "fieldname": "other_medical_issues",
+   "fieldtype": "Check",
+   "label": "Other Medical Issues"
+  },
+  {
+   "default": "0",
+   "fieldname": "any_allergy",
+   "fieldtype": "Check",
+   "label": "Any Allergy"
+  },
+  {
+   "depends_on": "any_allergy == 1",
+   "fieldname": "specify_allergy",
+   "fieldtype": "Data",
+   "label": "Specify Allergy"
+  },
+  {
+   "depends_on": "other_medical_issues == 1",
+   "fieldname": "specify_other_medical_issues",
+   "fieldtype": "Data",
+   "label": "Specify Other Medical Issues"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Link",
+   "label": "Contact Person",
+   "options": "Family Detail"
+  },
+  {
+   "fetch_from": "contact_person.mobile_no",
+   "fieldname": "contact_person_mob_no",
+   "fieldtype": "Read Only",
+   "label": "Contact Person Mob No",
+   "options": "Family Detail"
+  },
+  {
+   "fetch_from": "contact_person.whatsapp_no",
+   "fieldname": "contact_whataspp_no",
+   "fieldtype": "Read Only",
+   "label": "Contact Whataspp No"
+  },
+  {
+   "default": "0",
+   "fieldname": "covid_infected",
+   "fieldtype": "Check",
+   "label": "Covid Infected"
+  }
+ ],
+ "modified": "2020-05-06 18:42:16.424186",
+ "modified_by": "Administrator",
+ "module": "Member Registration",
+ "name": "Member Log",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Community Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

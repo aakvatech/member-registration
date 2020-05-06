@@ -23,6 +23,11 @@ def get_data():
                     "name": "Family",
                     "description": _("Family")
                 },
+                {
+                    "type": "doctype",
+                    "name": "Member Log",
+                    "description": _("Member Log")
+                },
             ]
         },
     ]

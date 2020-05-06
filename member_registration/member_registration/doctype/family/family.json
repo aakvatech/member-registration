@@ -1,170 +1,169 @@
 {
- "actions": [],
- "autoname": "field:family_head_name",
- "creation": "2020-02-18 15:00:08.652493",
- "doctype": "DocType",
- "editable_grid": 1,
- "engine": "InnoDB",
- "field_order": [
-  "family_head_name",
-  "name_on_circulars",
-  "organisation_name",
-  "column_break_4",
-  "parent_member_name",
-  "security_group_name",
-  "security_group_head_name",
-  "section_break_7",
-  "physical_address",
-  "column_break_9",
-  "residence_telephone_no",
-  "po_box_no",
-  "section_break_12",
-  "family_member_details"
- ],
- "fields": [
-  {
-   "fieldname": "parent_member_name",
-   "fieldtype": "Link",
-   "label": "Parent Member Name",
-   "options": "Family",
-   "permlevel": 1
-  },
-  {
-   "fieldname": "family_head_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Family Head Name",
-   "reqd": 1,
-   "unique": 1
-  },
-  {
-   "fieldname": "name_on_circulars",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Name on Circulars",
-   "permlevel": 1,
-   "reqd": 1
-  },
-  {
-   "fieldname": "physical_address",
-   "fieldtype": "Small Text",
-   "label": "Physical Address",
-   "permlevel": 1
-  },
-  {
-   "fieldname": "residence_telephone_no",
-   "fieldtype": "Data",
-   "label": "Residence Telephone No.",
-   "permlevel": 1
-  },
-  {
-   "fieldname": "po_box_no",
-   "fieldtype": "Data",
-   "label": "P.O. Box No.",
-   "permlevel": 1
-  },
-  {
-   "fieldname": "security_group_name",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Security Group Name",
-   "options": "Security Group",
-   "permlevel": 1
-  },
-  {
-   "fetch_from": "security_group_name.security_group_head_name",
-   "fieldname": "security_group_head_name",
-   "fieldtype": "Data",
-   "label": "Security Group Head Name",
-   "permlevel": 1
-  },
-  {
-   "fieldname": "column_break_4",
-   "fieldtype": "Column Break",
-   "permlevel": 1
-  },
-  {
-   "fieldname": "section_break_7",
-   "fieldtype": "Section Break",
-   "permlevel": 1
-  },
-  {
-   "fieldname": "column_break_9",
-   "fieldtype": "Column Break",
-   "permlevel": 1
-  },
-  {
-   "fieldname": "section_break_12",
-   "fieldtype": "Section Break",
-   "permlevel": 1
-  },
-  {
-   "fieldname": "family_member_details",
-   "fieldtype": "Table",
-   "label": "Family Member Details",
-   "options": "Family Detail",
-   "permlevel": 1
-  },
-  {
-   "fieldname": "organisation_name",
-   "fieldtype": "Link",
-   "label": "Organisation Name",
-   "options": "Organisation",
-   "permlevel": 1,
-   "reqd": 1
-  }
- ],
- "links": [],
- "modified": "2020-04-21 18:30:27.032912",
- "modified_by": "Administrator",
- "module": "Member Registration",
- "name": "Family",
- "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Community Manager",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "read": 1,
-   "role": "Community User",
-   "write": 1
-  },
-  {
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "permlevel": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Community User",
-   "share": 1,
-   "write": 1
-  }
- ],
- "sort_field": "modified",
- "sort_order": "DESC",
- "track_changes": 1
+   "autoname": "field:family_head_name",
+   "creation": "2020-02-18 15:00:08.652493",
+   "doctype": "DocType",
+   "editable_grid": 1,
+   "engine": "InnoDB",
+   "field_order": [
+      "family_head_name",
+      "name_on_circulars",
+      "organisation_name",
+      "column_break_4",
+      "parent_member_name",
+      "security_group_name",
+      "security_group_head_name",
+      "section_break_7",
+      "physical_address",
+      "column_break_9",
+      "residence_telephone_no",
+      "po_box_no",
+      "section_break_12",
+      "family_member_details"
+   ],
+   "fields": [
+      {
+         "fieldname": "parent_member_name",
+         "fieldtype": "Link",
+         "label": "Parent Member Name",
+         "options": "Family",
+         "permlevel": 1
+      },
+      {
+         "fieldname": "family_head_name",
+         "fieldtype": "Data",
+         "in_list_view": 1,
+         "label": "Family Head Name",
+         "reqd": 1,
+         "unique": 1
+      },
+      {
+         "fieldname": "name_on_circulars",
+         "fieldtype": "Data",
+         "in_list_view": 1,
+         "label": "Name on Circulars",
+         "permlevel": 1,
+         "reqd": 1
+      },
+      {
+         "fieldname": "physical_address",
+         "fieldtype": "Small Text",
+         "label": "Physical Address",
+         "permlevel": 1
+      },
+      {
+         "fieldname": "residence_telephone_no",
+         "fieldtype": "Data",
+         "label": "Residence Telephone No.",
+         "permlevel": 1
+      },
+      {
+         "fieldname": "po_box_no",
+         "fieldtype": "Data",
+         "label": "P.O. Box No.",
+         "permlevel": 1
+      },
+      {
+         "fieldname": "security_group_name",
+         "fieldtype": "Link",
+         "in_list_view": 1,
+         "label": "Security Group Name",
+         "options": "Security Group",
+         "permlevel": 1
+      },
+      {
+         "fetch_from": "security_group_name.security_group_head_name",
+         "fieldname": "security_group_head_name",
+         "fieldtype": "Data",
+         "label": "Security Group Head Name",
+         "options": "Security Group",
+         "permlevel": 1
+      },
+      {
+         "fieldname": "column_break_4",
+         "fieldtype": "Column Break",
+         "permlevel": 1
+      },
+      {
+         "fieldname": "section_break_7",
+         "fieldtype": "Section Break",
+         "permlevel": 1
+      },
+      {
+         "fieldname": "column_break_9",
+         "fieldtype": "Column Break",
+         "permlevel": 1
+      },
+      {
+         "fieldname": "section_break_12",
+         "fieldtype": "Section Break",
+         "permlevel": 1
+      },
+      {
+         "fieldname": "family_member_details",
+         "fieldtype": "Table",
+         "label": "Family Member Details",
+         "options": "Family Detail",
+         "permlevel": 1
+      },
+      {
+         "fieldname": "organisation_name",
+         "fieldtype": "Link",
+         "label": "Organisation Name",
+         "options": "Organisation",
+         "permlevel": 1,
+         "reqd": 1
+      }
+   ],
+   "modified": "2020-04-12 22:39:09.840772",
+   "modified_by": "Administrator",
+   "module": "Member Registration",
+   "name": "Family",
+   "owner": "Administrator",
+   "permissions": [
+      {
+         "create": 1,
+         "delete": 1,
+         "email": 1,
+         "export": 1,
+         "print": 1,
+         "read": 1,
+         "report": 1,
+         "role": "System Manager",
+         "share": 1,
+         "write": 1
+      },
+      {
+         "create": 1,
+         "delete": 1,
+         "email": 1,
+         "export": 1,
+         "print": 1,
+         "read": 1,
+         "report": 1,
+         "role": "Community Manager",
+         "share": 1,
+         "write": 1
+      },
+      {
+         "create": 1,
+         "read": 1,
+         "role": "Community User",
+         "write": 1
+      },
+      {
+         "delete": 1,
+         "email": 1,
+         "export": 1,
+         "permlevel": 1,
+         "print": 1,
+         "read": 1,
+         "report": 1,
+         "role": "Community User",
+         "share": 1,
+         "write": 1
+      }
+   ],
+   "sort_field": "modified",
+   "sort_order": "DESC",
+   "track_changes": 1
 }
