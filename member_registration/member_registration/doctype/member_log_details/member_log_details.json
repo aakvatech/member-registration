@@ -1,0 +1,62 @@
+{
+ "creation": "2020-05-05 13:57:59.930361",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "record_date_and_time",
+  "description"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "record_date_and_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Record Date and Time",
+   "reqd": 1
+  },
+  {
+   "columns": 7,
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "Description",
+   "reqd": 1
+  }
+ ],
+ "modified": "2020-05-05 14:34:40.198900",
+ "modified_by": "Administrator",
+ "module": "Member Registration",
+ "name": "Member Log Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Community Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,13 @@
+{
+ "creation": "2020-04-14 17:13:46.376927",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2020-04-14 17:13:46.376927",
+ "modified_by": "Administrator",
+ "module": "Member Registration",
+ "name": "MR",
+ "owner": "Administrator",
+ "source_name": "MR",
+ "timeseries": 0
+}

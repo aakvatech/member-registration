@@ -1,0 +1,130 @@
+{
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "format:{full_member_name}",
+ "creation": "2020-02-18 15:59:39.243526",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "full_member_name",
+  "gender",
+  "date_of_birth",
+  "nationality",
+  "blood_group",
+  "mobile_no",
+  "whatsapp_no",
+  "email"
+ ],
+ "fields": [
+  {
+   "description": "Enter Full Name",
+   "fieldname": "full_member_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Member Name (*)",
+   "reqd": 1
+  },
+  {
+   "description": "Select Gender",
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Gender (*)",
+   "options": "\nMALE\nFEMALE",
+   "reqd": 1
+  },
+  {
+   "description": "Enter Date of Birth",
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Birth"
+  },
+  {
+   "description": "Enter Family Member Nationality",
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nationality (*)",
+   "reqd": 1
+  },
+  {
+   "description": "Select Blood Group",
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Blood Group",
+   "options": "\nA+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-"
+  },
+  {
+   "description": "Format: +255 XXX XXXXXX\nIncase of 2 No: +255 XXX XXXXXX / +255 XXX XXXXXX",
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile No"
+  },
+  {
+   "description": "Format: +255 XXX XXXXXX\nIncase of 2 No: +255 XXX XXXXXX / +255 XXX XXXXXX",
+   "fieldname": "whatsapp_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "WhatsApp No"
+  },
+  {
+   "description": "Enter valid Email Address",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email"
+  }
+ ],
+ "is_published_field": "gender",
+ "modified": "2020-05-06 18:56:12.400390",
+ "modified_by": "Administrator",
+ "module": "Member Registration",
+ "name": "Family Detail",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Community Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Community User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
