@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include member_registration *.css
+recursive-include member_registration *.csv
+recursive-include member_registration *.html
+recursive-include member_registration *.ico
+recursive-include member_registration *.js
+recursive-include member_registration *.json
+recursive-include member_registration *.md
+recursive-include member_registration *.png
+recursive-include member_registration *.py
+recursive-include member_registration *.svg
+recursive-include member_registration *.txt
+recursive-exclude member_registration *.pyc
