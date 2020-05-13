@@ -13,6 +13,6 @@ def get_data():
             "icon": "octicon octicon-file-directory",
             "type": "module",
             "label": _("Member Registration"),
-            "description": "Todos, notes, calendar and newsletter."
+            "description": "Member database."
         },
     ]

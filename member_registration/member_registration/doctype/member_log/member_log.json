@@ -1,28 +1,28 @@
 {
+ "actions": [],
  "autoname": "Format:{member_name}",
  "creation": "2020-05-05 13:53:00.722458",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "organisation_name",
   "member_name",
+  "blood_group",
   "contact_person",
   "contact_person_mob_no",
-  "contact_whataspp_no",
+  "contact_whatsapp_no",
+  "column_break_8",
+  "person_in_charge",
+  "person_in_charge_name",
   "covid_infected",
   "infected_date",
   "recovered",
   "recovered_date",
   "death",
   "death_date",
-  "column_break_8",
-  "asthma",
-  "diabetes",
-  "heart_problem",
-  "any_allergy",
-  "specify_allergy",
-  "other_medical_issues",
-  "specify_other_medical_issues",
+  "section_break_12",
+  "medical_details",
   "section_break_4",
   "member_log_details"
  ],
@@ -53,7 +53,7 @@
    "label": "Recovered"
   },
   {
-   "default": "Now",
+   "default": "Today",
    "depends_on": "eval: doc.covid_infected ==1",
    "fieldname": "infected_date",
    "fieldtype": "Datetime",
@@ -85,52 +85,11 @@
    "fieldtype": "Column Break"
   },
   {
-   "default": "0",
-   "fieldname": "asthma",
-   "fieldtype": "Check",
-   "label": "Asthma"
-  },
-  {
-   "default": "0",
-   "fieldname": "diabetes",
-   "fieldtype": "Check",
-   "label": "Diabetes"
-  },
-  {
-   "default": "0",
-   "fieldname": "heart_problem",
-   "fieldtype": "Check",
-   "label": "Heart Problem"
-  },
-  {
-   "default": "0",
-   "fieldname": "other_medical_issues",
-   "fieldtype": "Check",
-   "label": "Other Medical Issues"
-  },
-  {
-   "default": "0",
-   "fieldname": "any_allergy",
-   "fieldtype": "Check",
-   "label": "Any Allergy"
-  },
-  {
-   "depends_on": "any_allergy == 1",
-   "fieldname": "specify_allergy",
-   "fieldtype": "Data",
-   "label": "Specify Allergy"
-  },
-  {
-   "depends_on": "other_medical_issues == 1",
-   "fieldname": "specify_other_medical_issues",
-   "fieldtype": "Data",
-   "label": "Specify Other Medical Issues"
-  },
-  {
    "fieldname": "contact_person",
    "fieldtype": "Link",
    "label": "Contact Person",
-   "options": "Family Detail"
+   "options": "Family Detail",
+   "reqd": 1
   },
   {
    "fetch_from": "contact_person.mobile_no",
@@ -140,19 +99,58 @@
    "options": "Family Detail"
   },
   {
-   "fetch_from": "contact_person.whatsapp_no",
-   "fieldname": "contact_whataspp_no",
-   "fieldtype": "Read Only",
-   "label": "Contact Whataspp No"
-  },
-  {
    "default": "0",
    "fieldname": "covid_infected",
    "fieldtype": "Check",
    "label": "Covid Infected"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "medical_details",
+   "fieldtype": "Table MultiSelect",
+   "label": "Medical Details",
+   "options": "MEMBER MEDICAL DETAIL"
+  },
+  {
+   "fieldname": "organisation_name",
+   "fieldtype": "Link",
+   "label": "Organisation Name",
+   "options": "Organisation",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "member_name.blood_group",
+   "fieldname": "blood_group",
+   "fieldtype": "Read Only",
+   "label": "Blood Group",
+   "options": "Family Detail"
+  },
+  {
+   "fieldname": "person_in_charge",
+   "fieldtype": "Link",
+   "label": "Person In Charge ",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "person_in_charge.full_name",
+   "fieldname": "person_in_charge_name",
+   "fieldtype": "Read Only",
+   "label": "Person In Charge Name"
+  },
+  {
+   "fetch_from": "contact_person.whatsapp_no",
+   "fieldname": "contact_whatsapp_no",
+   "fieldtype": "Read Only",
+   "label": "Contact WhatsApp No",
+   "options": "Family Detail"
   }
  ],
- "modified": "2020-05-06 18:42:16.424186",
+ "links": [],
+ "modified": "2020-05-13 12:03:26.573250",
  "modified_by": "Administrator",
  "module": "Member Registration",
  "name": "Member Log",
@@ -173,7 +171,6 @@
   },
   {
    "create": 1,
-   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
