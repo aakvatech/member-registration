@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "creation": "2020-05-14 13:02:06.313060",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "medical_insurance_company_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "medical_insurance_company_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Medical Insurance Company Name",
+   "options": "Medical Insurance Company",
+   "reqd": 1
+  }
+ ],
+ "links": [],
+ "modified": "2020-05-14 13:04:36.890817",
+ "modified_by": "Administrator",
+ "module": "Member Registration",
+ "name": "Member Insurance Cover Name",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
