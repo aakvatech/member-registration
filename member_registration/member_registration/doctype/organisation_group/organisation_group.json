@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "autoname": "field:security_group_name",
+ "creation": "2020-07-18 10:03:44.243114",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "organisation_name",
+  "security_group_name",
+  "security_group_head_name",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "organisation_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Organisation Name",
+   "options": "Organisation",
+   "reqd": 1,
+   "show_days": 1,
+   "show_seconds": 1
+  },
+  {
+   "fieldname": "security_group_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Security Group Name",
+   "reqd": 1,
+   "show_days": 1,
+   "show_seconds": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "security_group_head_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Security Group Head Name",
+   "reqd": 1,
+   "show_days": 1,
+   "show_seconds": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Organisation Group",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2020-07-18 10:03:44.243114",
+ "modified_by": "Administrator",
+ "module": "Member Registration",
+ "name": "Organisation Group",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Community Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Community User",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

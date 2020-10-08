@@ -16,7 +16,9 @@
   "mobile_no",
   "whatsapp_no",
   "email",
-  "organisation_name"
+  "organisation_name",
+  "death",
+  "death_of_date"
  ],
  "fields": [
   {
@@ -25,7 +27,9 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Full Member Name (*)",
-   "reqd": 1
+   "reqd": 1,
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "description": "Select Gender",
@@ -34,14 +38,18 @@
    "in_list_view": 1,
    "label": "Gender (*)",
    "options": "\nMALE\nFEMALE",
-   "reqd": 1
+   "reqd": 1,
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "description": "Enter Date of Birth",
    "fieldname": "date_of_birth",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Date of Birth"
+   "label": "Date of Birth",
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "description": "Enter Family Member Nationality",
@@ -49,7 +57,9 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Nationality (*)",
-   "reqd": 1
+   "reqd": 1,
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "description": "Select Blood Group",
@@ -57,40 +67,67 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Blood Group",
-   "options": "\nA+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-"
+   "options": "\nA+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-",
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "description": "Format: +255 XXX XXXXXX\nIncase of 2 No: +255 XXX XXXXXX / +255 XXX XXXXXX",
    "fieldname": "mobile_no",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Mobile No"
+   "label": "Mobile No",
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "description": "Format: +255 XXX XXXXXX\nIncase of 2 No: +255 XXX XXXXXX / +255 XXX XXXXXX",
    "fieldname": "whatsapp_no",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "WhatsApp No"
+   "label": "WhatsApp No",
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "description": "Enter valid Email Address",
    "fieldname": "email",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Email"
+   "label": "Email",
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "fieldname": "organisation_name",
    "fieldtype": "Link",
    "label": "Organisation Name",
    "options": "Organisation",
-   "read_only": 1
+   "read_only": 1,
+   "show_days": 1,
+   "show_seconds": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "death",
+   "fieldtype": "Check",
+   "label": "Death",
+   "show_days": 1,
+   "show_seconds": 1
+  },
+  {
+   "depends_on": "eval: doc.death !=\"\"",
+   "fieldname": "death_of_date",
+   "fieldtype": "Date",
+   "label": "Death of Date",
+   "mandatory_depends_on": "eval: doc.death",
+   "show_days": 1,
+   "show_seconds": 1
   }
  ],
  "is_published_field": "gender",
  "links": [],
- "modified": "2020-05-12 13:36:49.173660",
+ "modified": "2020-08-13 09:33:46.602594",
  "modified_by": "Administrator",
  "module": "Member Registration",
  "name": "Family Detail",

@@ -9,6 +9,7 @@
   "family_head_name",
   "name_on_circulars",
   "organisation_name",
+  "email_address",
   "column_break_4",
   "parent_member_name",
   "security_group_name",
@@ -27,14 +28,17 @@
    "fieldtype": "Link",
    "label": "Parent Member Name",
    "options": "Family",
-   "permlevel": 1
+   "permlevel": 1,
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "fieldname": "family_head_name",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Family Head Name",
    "reqd": 1,
+   "show_days": 1,
+   "show_seconds": 1,
    "unique": 1
   },
   {
@@ -43,25 +47,33 @@
    "in_list_view": 1,
    "label": "Name on Circulars",
    "permlevel": 1,
-   "reqd": 1
+   "reqd": 1,
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "fieldname": "physical_address",
    "fieldtype": "Small Text",
    "label": "Physical Address",
-   "permlevel": 1
+   "permlevel": 1,
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "fieldname": "residence_telephone_no",
    "fieldtype": "Data",
    "label": "Residence Telephone No.",
-   "permlevel": 1
+   "permlevel": 1,
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "fieldname": "po_box_no",
    "fieldtype": "Data",
    "label": "P.O. Box No.",
-   "permlevel": 1
+   "permlevel": 1,
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "fieldname": "security_group_name",
@@ -69,41 +81,55 @@
    "in_list_view": 1,
    "label": "Security Group Name",
    "options": "Security Group",
-   "permlevel": 1
+   "permlevel": 1,
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "fetch_from": "security_group_name.security_group_head_name",
    "fieldname": "security_group_head_name",
    "fieldtype": "Data",
    "label": "Security Group Head Name",
-   "permlevel": 1
+   "permlevel": 1,
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "fieldname": "column_break_4",
    "fieldtype": "Column Break",
-   "permlevel": 1
+   "permlevel": 1,
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "fieldname": "section_break_7",
    "fieldtype": "Section Break",
-   "permlevel": 1
+   "permlevel": 1,
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "fieldname": "column_break_9",
    "fieldtype": "Column Break",
-   "permlevel": 1
+   "permlevel": 1,
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "fieldname": "section_break_12",
    "fieldtype": "Section Break",
-   "permlevel": 1
+   "permlevel": 1,
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "fieldname": "family_member_details",
    "fieldtype": "Table",
    "label": "Family Member Details",
    "options": "Family Detail",
-   "permlevel": 1
+   "permlevel": 1,
+   "show_days": 1,
+   "show_seconds": 1
   },
   {
    "fieldname": "organisation_name",
@@ -111,11 +137,20 @@
    "label": "Organisation Name",
    "options": "Organisation",
    "permlevel": 1,
-   "reqd": 1
+   "reqd": 1,
+   "show_days": 1,
+   "show_seconds": 1
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email address",
+   "show_days": 1,
+   "show_seconds": 1
   }
  ],
  "links": [],
- "modified": "2020-05-08 18:48:36.863639",
+ "modified": "2020-06-07 13:12:37.319258",
  "modified_by": "Administrator",
  "module": "Member Registration",
  "name": "Family",
