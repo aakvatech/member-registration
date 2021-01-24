@@ -99,14 +99,13 @@
    "depends_on": "eval: doc.death !=\"\"",
    "fieldname": "death_of_date",
    "fieldtype": "Date",
-   "label": "Death of Date",
-   "mandatory_depends_on": "eval: doc.death"
+   "label": "Death of Date"
   }
  ],
  "is_published_field": "gender",
  "istable": 1,
  "links": [],
- "modified": "2021-01-24 12:00:47.493762",
+ "modified": "2021-01-24 12:13:36.855184",
  "modified_by": "Administrator",
  "module": "Member Registration",
  "name": "Family Detail",
