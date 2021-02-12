@@ -26,8 +26,7 @@
    "fieldname": "full_member_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Full Member Name (*)",
-   "reqd": 1
+   "label": "Full Member Name (*)"
   },
   {
    "description": "Select Gender",
@@ -35,8 +34,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Gender (*)",
-   "options": "\nMALE\nFEMALE",
-   "reqd": 1
+   "options": "\nMALE\nFEMALE"
   },
   {
    "description": "Enter Date of Birth",
@@ -50,8 +48,7 @@
    "fieldname": "nationality",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Nationality (*)",
-   "reqd": 1
+   "label": "Nationality (*)"
   },
   {
    "description": "Select Blood Group",
@@ -80,7 +77,8 @@
    "fieldname": "email",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Email"
+   "label": "Email",
+   "options": "Email"
   },
   {
    "fieldname": "organisation_name",
@@ -105,7 +103,7 @@
  "is_published_field": "gender",
  "istable": 1,
  "links": [],
- "modified": "2021-01-24 12:13:36.855184",
+ "modified": "2021-02-09 08:12:25.005984",
  "modified_by": "Administrator",
  "module": "Member Registration",
  "name": "Family Detail",
