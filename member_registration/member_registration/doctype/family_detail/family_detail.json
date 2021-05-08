@@ -13,12 +13,19 @@
   "date_of_birth",
   "nationality",
   "blood_group",
+  "column_break_6",
   "mobile_no",
   "whatsapp_no",
   "email",
+  "passport_no",
+  "nida_card_no",
   "organisation_name",
   "death",
-  "death_of_date"
+  "death_of_date",
+  "medical_information_section",
+  "diabetic_",
+  "allergies",
+  "other_pre_existing_medical_conditions"
  ],
  "fields": [
   {
@@ -85,25 +92,63 @@
    "fieldtype": "Link",
    "label": "Organisation Name",
    "options": "Organisation",
+   "permlevel": 2,
    "read_only": 1
   },
   {
    "default": "0",
    "fieldname": "death",
    "fieldtype": "Check",
-   "label": "Death"
+   "label": "Death",
+   "permlevel": 2
   },
   {
    "depends_on": "eval: doc.death !=\"\"",
    "fieldname": "death_of_date",
    "fieldtype": "Date",
-   "label": "Death of Date"
+   "label": "Death of Date",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "medical_information_section",
+   "fieldtype": "Section Break",
+   "label": "Medical Information"
+  },
+  {
+   "default": "0",
+   "fieldname": "diabetic_",
+   "fieldtype": "Check",
+   "label": "Diabetic ?"
+  },
+  {
+   "fieldname": "allergies",
+   "fieldtype": "Small Text",
+   "label": "Allergies"
+  },
+  {
+   "fieldname": "other_pre_existing_medical_conditions",
+   "fieldtype": "Small Text",
+   "label": "Other Pre-existing Medical Conditions"
+  },
+  {
+   "fieldname": "passport_no",
+   "fieldtype": "Data",
+   "label": "Passport No"
+  },
+  {
+   "fieldname": "nida_card_no",
+   "fieldtype": "Data",
+   "label": "Nida Card No"
   }
  ],
  "is_published_field": "gender",
  "istable": 1,
  "links": [],
- "modified": "2021-02-09 08:12:25.005984",
+ "modified": "2021-05-07 17:42:44.281422",
  "modified_by": "Administrator",
  "module": "Member Registration",
  "name": "Family Detail",

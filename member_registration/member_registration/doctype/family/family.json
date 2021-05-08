@@ -121,11 +121,12 @@
    "fieldname": "email_address",
    "fieldtype": "Data",
    "label": "Email address",
-   "options": "Email"
+   "options": "Email",
+   "permlevel": 2
   }
  ],
  "links": [],
- "modified": "2021-02-09 08:12:07.191237",
+ "modified": "2021-05-08 14:33:14.915308",
  "modified_by": "Administrator",
  "module": "Member Registration",
  "name": "Family",
