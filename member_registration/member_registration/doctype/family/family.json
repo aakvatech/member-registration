@@ -11,10 +11,12 @@
   "name_on_circulars",
   "organisation_name",
   "email_address",
+  "send_online_link",
   "column_break_4",
   "parent_member_name",
   "security_group_name",
   "security_group_head_name",
+  "user_id",
   "section_break_7",
   "physical_address",
   "column_break_9",
@@ -123,10 +125,23 @@
    "label": "Email address",
    "options": "Email",
    "permlevel": 2
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "label": "User ID",
+   "options": "User",
+   "permlevel": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "send_online_link",
+   "fieldtype": "Check",
+   "label": "Send online link"
   }
  ],
  "links": [],
- "modified": "2021-05-08 14:33:14.915308",
+ "modified": "2021-05-20 16:48:41.864249",
  "modified_by": "Administrator",
  "module": "Member Registration",
  "name": "Family",

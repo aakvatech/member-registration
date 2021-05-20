@@ -20,7 +20,7 @@
  "is_standard": 1,
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2021-02-06 16:58:09.688849",
+ "modified": "2021-05-19 00:33:58.220766",
  "modified_by": "Administrator",
  "module": "Member Registration",
  "name": "shree-vageshwari-soni-samaj",
@@ -57,6 +57,7 @@
    "label": "Email address",
    "max_length": 0,
    "max_value": 0,
+   "options": "Email",
    "read_only": 0,
    "reqd": 0,
    "show_in_filter": 0
