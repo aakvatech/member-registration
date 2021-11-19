@@ -18,8 +18,13 @@
   "security_group_head_name",
   "user_id",
   "section_break_7",
-  "physical_address",
+  "plot_number",
+  "street",
+  "building_name",
+  "house_number",
   "column_break_9",
+  "physical_address",
+  "region",
   "residence_telephone_no",
   "po_box_no",
   "section_break_12",
@@ -138,10 +143,36 @@
    "fieldname": "send_online_link",
    "fieldtype": "Check",
    "label": "Send online link"
+  },
+  {
+   "fieldname": "plot_number",
+   "fieldtype": "Data",
+   "label": "Plot Number"
+  },
+  {
+   "fieldname": "street",
+   "fieldtype": "Data",
+   "label": "Street"
+  },
+  {
+   "fieldname": "building_name",
+   "fieldtype": "Data",
+   "label": "Building Name"
+  },
+  {
+   "fieldname": "house_number",
+   "fieldtype": "Data",
+   "label": "House Number"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Select",
+   "label": "Region",
+   "options": "Dar es Salaam\nArusha Region\nDodoma Region\nIringa Region\nKagera Region\nKigoma Region\nKilimanjaro Region\nLindi Region\nManyara Region\nMara Region\nMbeya Region\nMorogoro Region\nMtwara Region\nMwanza Region\nNjombe Region\nPwani Region\nRukwa Region\nRuvuma Region\nShinyanga Region\nSingida Region\nSongwe Region\nTabora Region\nTanga Region"
   }
  ],
  "links": [],
- "modified": "2021-05-20 16:48:41.864249",
+ "modified": "2021-08-07 21:06:56.456053",
  "modified_by": "Administrator",
  "module": "Member Registration",
  "name": "Family",

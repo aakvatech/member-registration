@@ -17,26 +17,15 @@
    "reqd": 1
   }
  ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
  "links": [],
- "modified": "2020-05-08 16:12:40.403861",
+ "modified": "2021-10-03 15:03:58.763800",
  "modified_by": "Administrator",
  "module": "Member Registration",
  "name": "MEMBER MEDICAL DETAIL",
  "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
+ "permissions": [],
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",

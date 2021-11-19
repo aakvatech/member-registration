@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_rename": 1,
  "autoname": "Format:{member_name}",
  "creation": "2020-05-05 13:53:00.722458",
  "doctype": "DocType",
@@ -12,6 +13,7 @@
   "contact_person",
   "contact_person_mob_no",
   "contact_whatsapp_no",
+  "family",
   "column_break_8",
   "person_in_charge",
   "person_in_charge_name",
@@ -24,7 +26,9 @@
   "section_break_12",
   "medical_details",
   "section_break_4",
-  "member_log_details"
+  "member_log_details",
+  "section_break_21",
+  "member_log_covid19_vaccine_details"
  ],
  "fields": [
   {
@@ -37,48 +41,55 @@
   },
   {
    "fieldname": "section_break_4",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "permlevel": 1
   },
   {
    "fieldname": "member_log_details",
    "fieldtype": "Table",
    "label": "Member Log Details",
-   "options": "Member Log Details"
+   "options": "Member Log Details",
+   "permlevel": 1
   },
   {
    "default": "0",
    "depends_on": "eval: doc.covid_infected ==1",
    "fieldname": "recovered",
    "fieldtype": "Check",
-   "label": "Recovered"
+   "label": "Recovered",
+   "permlevel": 1
   },
   {
    "default": "Today",
    "depends_on": "eval: doc.covid_infected ==1",
    "fieldname": "infected_date",
    "fieldtype": "Datetime",
-   "label": "Infected Date"
+   "label": "Infected Date",
+   "permlevel": 1
   },
   {
    "default": "Now",
    "depends_on": "eval: doc.recovered ==1",
    "fieldname": "recovered_date",
    "fieldtype": "Datetime",
-   "label": "Recovered Date"
+   "label": "Recovered Date",
+   "permlevel": 1
   },
   {
    "default": "0",
    "depends_on": "eval: doc.covid_infected ==1",
    "fieldname": "death",
    "fieldtype": "Check",
-   "label": "Death"
+   "label": "Death",
+   "permlevel": 1
   },
   {
    "default": "Now",
    "depends_on": "eval: doc.death ==1",
    "fieldname": "death_date",
    "fieldtype": "Datetime",
-   "label": "Death Date"
+   "label": "Death Date",
+   "permlevel": 1
   },
   {
    "fieldname": "column_break_8",
@@ -88,8 +99,7 @@
    "fieldname": "contact_person",
    "fieldtype": "Link",
    "label": "Contact Person",
-   "options": "Family Detail",
-   "reqd": 1
+   "options": "Family Detail"
   },
   {
    "fetch_from": "contact_person.mobile_no",
@@ -102,7 +112,8 @@
    "default": "0",
    "fieldname": "covid_infected",
    "fieldtype": "Check",
-   "label": "Covid Infected"
+   "label": "Covid Infected",
+   "permlevel": 1
   },
   {
    "fieldname": "section_break_12",
@@ -132,13 +143,13 @@
    "fieldname": "person_in_charge",
    "fieldtype": "Link",
    "label": "Person In Charge ",
-   "options": "User",
-   "reqd": 1
+   "options": "User"
   },
   {
    "fetch_from": "person_in_charge.full_name",
    "fieldname": "person_in_charge_name",
    "fieldtype": "Read Only",
+   "hidden": 1,
    "label": "Person In Charge Name"
   },
   {
@@ -147,10 +158,28 @@
    "fieldtype": "Read Only",
    "label": "Contact WhatsApp No",
    "options": "Family Detail"
+  },
+  {
+   "fetch_from": "member_name.parent",
+   "fieldname": "family",
+   "fieldtype": "Link",
+   "label": "Family",
+   "options": "Family"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "member_log_covid19_vaccine_details",
+   "fieldtype": "Table",
+   "label": "Member Log Covid19 Vaccine Details",
+   "options": "Member Log Covid19 Vaccine Details"
   }
  ],
+ "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-05-13 12:03:26.573250",
+ "modified": "2021-10-10 22:29:35.109877",
  "modified_by": "Administrator",
  "module": "Member Registration",
  "name": "Member Log",

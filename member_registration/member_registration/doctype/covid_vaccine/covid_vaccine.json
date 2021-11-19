@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{vaccine_name}",
+ "creation": "2021-10-03 13:48:51.215146",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vaccine_name",
+  "brand_name",
+  "no_of_jabs"
+ ],
+ "fields": [
+  {
+   "fieldname": "vaccine_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Vaccine Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "brand_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Brand Name"
+  },
+  {
+   "fieldname": "no_of_jabs",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "No of Jabs"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-10-03 14:13:14.208574",
+ "modified_by": "Administrator",
+ "module": "Member Registration",
+ "name": "Covid Vaccine",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "brand_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

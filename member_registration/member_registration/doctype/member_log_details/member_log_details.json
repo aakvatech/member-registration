@@ -47,38 +47,15 @@
    "reqd": 1
   }
  ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
  "links": [],
- "modified": "2020-05-08 19:01:16.494710",
+ "modified": "2021-10-03 15:01:44.241088",
  "modified_by": "Administrator",
  "module": "Member Registration",
  "name": "Member Log Details",
  "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Community Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
+ "permissions": [],
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

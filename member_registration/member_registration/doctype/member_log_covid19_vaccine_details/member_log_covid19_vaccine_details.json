@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "creation": "2021-10-03 16:20:54.350524",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vaccine_name",
+  "brand_name",
+  "no_of_jabs",
+  "jabs_taken",
+  "attach_certificate"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "vaccine_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vaccine Name",
+   "options": "Covid Vaccine",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fetch_from": "vaccine_name.brand_name",
+   "fieldname": "brand_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Brand Name",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "vaccine_name.no_of_jabs",
+   "fieldname": "no_of_jabs",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "No of Jabs",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "jabs_taken",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "No of Jabs Taken",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "attach_certificate",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Attach Certificate"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-10-09 12:03:04.249012",
+ "modified_by": "Administrator",
+ "module": "Member Registration",
+ "name": "Member Log Covid19 Vaccine Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
