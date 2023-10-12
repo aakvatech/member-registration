@@ -28,6 +28,10 @@
   "residence_telephone_no",
   "po_box_no",
   "section_break_12",
+  "occupation",
+  "column_break_23",
+  "place_of_work",
+  "section_break_25",
   "family_member_details"
  ],
  "fields": [
@@ -169,10 +173,28 @@
    "fieldtype": "Select",
    "label": "Region",
    "options": "Dar es Salaam\nArusha Region\nDodoma Region\nIringa Region\nKagera Region\nKigoma Region\nKilimanjaro Region\nLindi Region\nManyara Region\nMara Region\nMbeya Region\nMorogoro Region\nMtwara Region\nMwanza Region\nNjombe Region\nPwani Region\nRukwa Region\nRuvuma Region\nShinyanga Region\nSingida Region\nSongwe Region\nTabora Region\nTanga Region"
+  },
+  {
+   "fieldname": "occupation",
+   "fieldtype": "Data",
+   "label": "Occupation"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "place_of_work",
+   "fieldtype": "Data",
+   "label": "Place of Work"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
   }
  ],
  "links": [],
- "modified": "2021-08-07 21:06:56.456053",
+ "modified": "2022-04-08 11:14:33.192526",
  "modified_by": "Administrator",
  "module": "Member Registration",
  "name": "Family",
